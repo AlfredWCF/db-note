@@ -1,9 +1,10 @@
-<https://docs.microsoft.com/en-us/sql/t-sql/queries/queries>
+
 ##Query（DML）##
+<https://docs.microsoft.com/en-us/sql/t-sql/queries/queries>
 
 
-<https://docs.microsoft.com/en-us/sql/t-sql/functions/functions>
 ## 函数 ##
+<https://docs.microsoft.com/en-us/sql/t-sql/functions/functions>
 可以使用内置函数，以及自定义函数实现一些高级功能。
 
 ### Rowset functions ###
@@ -45,6 +46,7 @@ A correlation name must be specified for the bulk rowset in the from clause.
 * [Use Format File](https://docs.microsoft.com/en-us/sql/relational-databases/import-export/use-a-format-file-to-bulk-import-data-sql-server)
 
 不确定如何使用format file时，使用bcp（bulk copy program）工具
+
         # 使用相同的格式导出、导入数据
         PS C:\> bcp MoliVideo20_Dev.dbo.Site out .\test.bcp -U <userID> -P <password> -S <host> -w
         PS C:\> bcp MoliVideo20_Dev.dbo.Site in .\test.bcp -U <userID> -P <password> -S <host> -w
