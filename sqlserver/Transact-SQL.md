@@ -1,10 +1,13 @@
 
-##Query[DML]##
+## Query[DML] ##
+
 <https://docs.microsoft.com/en-us/sql/t-sql/queries/queries>
 
 
 ## 函数 ##
+
 <https://docs.microsoft.com/en-us/sql/t-sql/functions/functions>
+
 可以使用内置函数，以及自定义函数实现一些高级功能。
 
 ### Rowset functions ###
