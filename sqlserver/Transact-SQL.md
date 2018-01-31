@@ -3,6 +3,11 @@
 
 <https://docs.microsoft.com/en-us/sql/t-sql/queries/queries>
 
+### Hints ###
+#### Hints - Table ####
+* KEEPIDENTITY
+
+
 
 ## 函数 ##
 
@@ -41,6 +46,8 @@ A correlation name must be specified for the bulk rowset in the from clause.
    FROM OPENROWSET(BULK...) AS table_alias[(column_alias,...n)]
 
 可以使用 BULK INSERT 或者 OPENROWSET(BULK...) 方法导入数据 [bulk imports data from a data file into a SQL Server table](https://docs.microsoft.com/en-us/sql/relational-databases/import-export/import-bulk-data-by-using-bulk-insert-or-openrowset-bulk-sql-server)
+
+当OPENROWSET(BULK...)与insert语句一起使用时，可以使用KEEPIDENTITY (Hints - table)命令
 
 使用OPENROWSET 的 BULK 选项时，需要结合使用Format文件：
 * [Create a Format File](https://docs.microsoft.com/en-us/sql/relational-databases/import-export/create-a-format-file-sql-server)
