@@ -1,21 +1,18 @@
-
-## Query[DML] ##
-
-<https://docs.microsoft.com/en-us/sql/t-sql/queries/queries>
-
-### Hints ###
-#### Hints - Table ####
-* KEEPIDENTITY
-
-
-
-## 函数 ##
+# 函数 #
 
 <https://docs.microsoft.com/en-us/sql/t-sql/functions/functions>
 
 可以使用内置函数，以及自定义函数实现一些高级功能。
 
-### Rowset functions ###
+## 加密 Cryptographic ##
+
+### HASHBYTES ###
+
+HASHBYTES ( {'MD2' | 'MD4' | 'MD5' | 'SHA' | 'SHA1' | 'SHA2_256' |' SHA2_512'} , { @input | 'input' } ) 
+
+***
+
+## Rowset functions ##
 Rowset functions Return an object that can be used like table references in an SQL statement.
 - [OPENXML](https://docs.microsoft.com/zh-cn/sql/t-sql/functions/openxml-transact-sql)
 - [OPENJSON](https://docs.microsoft.com/zh-cn/sql/t-sql/functions/openjson-transact-sql)
@@ -23,7 +20,7 @@ Rowset functions Return an object that can be used like table references in an S
 - [OPENROWSET](https://docs.microsoft.com/zh-cn/sql/t-sql/functions/openrowset-transact-sql)
 - [OPENDATASOURCE](https://docs.microsoft.com/zh-cn/sql/t-sql/functions/opendatasource-transact-sql)
 
-#### OPENROWSET ####
+### OPENROWSET ###
 The OPENROWSET function can be referenced in the FROM clause of a query as if it were a table name.
 The OPENROWSET function can also be referenced as the target table of an INSERT, UPDATE, or DELETE statement, subject to the capabilities of the [OLE DB provider](https://msdn.microsoft.com/en-us/library/ms709836(v=vs.85).aspx).
 Although the query might return multiple result sets, OPENROWSET returns only the first one. 
@@ -40,7 +37,7 @@ OPENROWSET also supports bulk operations through a built-in BULK provider that e
 
 > OPENROWSET does not accept variables for its arguments. 
 
-##### Using OPENROWSET with the BULK Option #####
+#### Using OPENROWSET with the BULK Option ####
 
 A correlation name must be specified for the bulk rowset in the from clause. 
    FROM OPENROWSET(BULK...) AS table_alias[(column_alias,...n)]

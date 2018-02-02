@@ -1,0 +1,1 @@
+[enable CLR Integration](https://docs.microsoft.com/en-us/sql/relational-databases/clr-integration/clr-integration-enabling)
