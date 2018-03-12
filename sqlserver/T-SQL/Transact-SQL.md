@@ -39,6 +39,8 @@ OPENROWSET also supports bulk operations through a built-in BULK provider that e
 
 #### Using OPENROWSET with the BULK Option ####
 
+批量导入数据 批量导出数据
+
 A correlation name must be specified for the bulk rowset in the from clause. 
    FROM OPENROWSET(BULK...) AS table_alias[(column_alias,...n)]
 
